@@ -1,0 +1,1 @@
+2018-08-09 17:17:15	3.9s	gloomy_gates	OK	e3c7e584b2c88098c92848939a011be4	ac68e94f-a7b0-4351-a4b8-86656117c1b1	nextflow run mockBcl2fastq.nf -params-file analysis.yaml -work-dir ./work

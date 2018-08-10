@@ -1,0 +1,102 @@
+Aug-09 17:17:15.019 [main] DEBUG nextflow.cli.Launcher - $> /mnt/galaxy/data/nextflow/nextflow run mockBcl2fastq.nf -params-file analysis.yaml -work-dir ./work
+Aug-09 17:17:15.129 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 0.30.2
+Aug-09 17:17:15.146 [main] INFO  nextflow.cli.CmdRun - Launching `mockBcl2fastq.nf` [gloomy_gates] - revision: e3c7e584b2
+Aug-09 17:17:15.287 [main] DEBUG nextflow.Session - Session uuid: ac68e94f-a7b0-4351-a4b8-86656117c1b1
+Aug-09 17:17:15.287 [main] DEBUG nextflow.Session - Run name: gloomy_gates
+Aug-09 17:17:15.290 [main] DEBUG nextflow.Session - Executor pool size: 16
+Aug-09 17:17:15.329 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 0.30.2 build 4867
+  Modified: 16-06-2018 17:49 UTC (13:49 EDT)
+  System: Linux 2.6.32-696.18.7.el6.x86_64
+  Runtime: Groovy 2.4.15 on Java HotSpot(TM) 64-Bit Server VM 1.8.0_92-b14
+  Encoding: UTF-8 (ISO-8859-15)
+  Process: 19353@compute-2-1.local [10.1.255.237]
+  CPUs: 16 - Mem: 63 GB (29.4 GB) - Swap: 32 GB (31.9 GB)
+Aug-09 17:17:15.448 [main] DEBUG nextflow.Session - Work-dir: /mnt/home/ngebremedhin/novaseq_pipe/secondary_analysis/work [nfs]
+Aug-09 17:17:15.450 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /mnt/home/ngebremedhin/novaseq_pipe/secondary_analysis/bin
+Aug-09 17:17:15.657 [main] DEBUG nextflow.Session - Session start invoked
+Aug-09 17:17:15.666 [main] DEBUG nextflow.processor.TaskDispatcher - Dispatcher > start
+Aug-09 17:17:15.667 [main] DEBUG nextflow.script.ScriptRunner - > Script parsing
+Aug-09 17:17:15.961 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Aug-09 17:17:16.047 [main] DEBUG nextflow.processor.ProcessFactory - << taskConfig executor: null
+Aug-09 17:17:16.048 [main] DEBUG nextflow.processor.ProcessFactory - >> processorType: 'local'
+Aug-09 17:17:16.054 [main] DEBUG nextflow.executor.Executor - Initializing executor: local
+Aug-09 17:17:16.057 [main] INFO  nextflow.executor.Executor - [warm up] executor > local
+Aug-09 17:17:16.063 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=16; memory=63 GB; capacity=16; pollInterval=100ms; dumpInterval=5m
+Aug-09 17:17:16.069 [main] DEBUG nextflow.processor.TaskDispatcher - Starting monitor: LocalPollingMonitor
+Aug-09 17:17:16.069 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Aug-09 17:17:16.072 [main] DEBUG nextflow.executor.Executor - Invoke register for executor: local
+Aug-09 17:17:16.231 [main] DEBUG nextflow.Session - >>> barrier register (process: bcl2fastq)
+Aug-09 17:17:16.235 [main] DEBUG nextflow.processor.TaskProcessor - Creating operator > bcl2fastq -- maxForks: 16
+Aug-09 17:17:16.379 [main] DEBUG nextflow.processor.ProcessFactory - << taskConfig executor: null
+Aug-09 17:17:16.381 [main] DEBUG nextflow.processor.ProcessFactory - >> processorType: 'local'
+Aug-09 17:17:16.382 [main] DEBUG nextflow.executor.Executor - Initializing executor: local
+Aug-09 17:17:16.396 [main] DEBUG nextflow.Session - >>> barrier register (process: submitSecondarAnalysis)
+Aug-09 17:17:16.397 [main] DEBUG nextflow.processor.TaskProcessor - Creating operator > submitSecondarAnalysis -- maxForks: 16
+Aug-09 17:17:16.400 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Aug-09 17:17:16.400 [main] DEBUG nextflow.Session - Session await
+Aug-09 17:17:16.507 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Aug-09 17:17:16.517 [Task submitter] INFO  nextflow.Session - [04/107bdf] Submitted process > bcl2fastq (one)
+Aug-09 17:17:16.567 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Aug-09 17:17:16.567 [Task submitter] INFO  nextflow.Session - [71/6b46cc] Submitted process > bcl2fastq (three)
+Aug-09 17:17:16.594 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Aug-09 17:17:16.596 [Task submitter] INFO  nextflow.Session - [3d/551329] Submitted process > bcl2fastq (four)
+Aug-09 17:17:16.608 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Aug-09 17:17:16.609 [Task submitter] INFO  nextflow.Session - [07/68f651] Submitted process > bcl2fastq (two)
+Aug-09 17:17:16.623 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Aug-09 17:17:16.624 [Task submitter] INFO  nextflow.Session - [6e/80cf72] Submitted process > bcl2fastq (four)
+Aug-09 17:17:16.636 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Aug-09 17:17:16.644 [Task submitter] INFO  nextflow.Session - [b3/580153] Submitted process > bcl2fastq (two)
+Aug-09 17:17:16.665 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Aug-09 17:17:16.666 [Task submitter] INFO  nextflow.Session - [1a/a8c31e] Submitted process > bcl2fastq (three)
+Aug-09 17:17:16.702 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Aug-09 17:17:16.703 [Task submitter] INFO  nextflow.Session - [8d/80b9f9] Submitted process > bcl2fastq (one)
+Aug-09 17:17:16.914 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Aug-09 17:17:16.916 [Task submitter] INFO  nextflow.Session - [25/bcd59c] Submitted process > bcl2fastq (two)
+Aug-09 17:17:16.944 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Aug-09 17:17:16.944 [Task submitter] INFO  nextflow.Session - [a4/babf88] Submitted process > bcl2fastq (four)
+Aug-09 17:17:16.972 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Aug-09 17:17:16.972 [Task submitter] INFO  nextflow.Session - [69/683ccf] Submitted process > bcl2fastq (one)
+Aug-09 17:17:16.992 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Aug-09 17:17:16.993 [Task submitter] INFO  nextflow.Session - [01/53c41e] Submitted process > bcl2fastq (three)
+Aug-09 17:17:17.008 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: bcl2fastq (one); status: COMPLETED; exit: 0; error: -; workDir: /mnt/home/ngebremedhin/novaseq_pipe/secondary_analysis/work/04/107bdf41e3f2926ad933a323014947]
+Aug-09 17:17:17.013 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Aug-09 17:17:17.014 [Task submitter] INFO  nextflow.Session - [12/ec5b44] Submitted process > bcl2fastq (two)
+Aug-09 17:17:17.036 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Aug-09 17:17:17.037 [Task submitter] INFO  nextflow.Session - [01/f3e125] Submitted process > bcl2fastq (one)
+Aug-09 17:17:17.058 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Aug-09 17:17:17.059 [Task submitter] INFO  nextflow.Session - [a9/3c86b3] Submitted process > bcl2fastq (three)
+Aug-09 17:17:17.095 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Aug-09 17:17:17.096 [Task submitter] INFO  nextflow.Session - [e0/c1cb23] Submitted process > bcl2fastq (four)
+Aug-09 17:17:17.243 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 12; name: bcl2fastq (three); status: COMPLETED; exit: 0; error: -; workDir: /mnt/home/ngebremedhin/novaseq_pipe/secondary_analysis/work/71/6b46cc1aa247ac736f93983908e53a]
+Aug-09 17:17:17.334 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 9; name: bcl2fastq (four); status: COMPLETED; exit: 0; error: -; workDir: /mnt/home/ngebremedhin/novaseq_pipe/secondary_analysis/work/3d/551329048b451a0c67cd3b22214784]
+Aug-09 17:17:17.438 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: bcl2fastq (two); status: COMPLETED; exit: 0; error: -; workDir: /mnt/home/ngebremedhin/novaseq_pipe/secondary_analysis/work/07/68f6510745023973859854f910fdcb]
+Aug-09 17:17:17.514 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 15; name: bcl2fastq (four); status: COMPLETED; exit: 0; error: -; workDir: /mnt/home/ngebremedhin/novaseq_pipe/secondary_analysis/work/6e/80cf724092f9d619d1ca93e53b7332]
+Aug-09 17:17:17.564 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: bcl2fastq (two); status: COMPLETED; exit: 0; error: -; workDir: /mnt/home/ngebremedhin/novaseq_pipe/secondary_analysis/work/b3/580153628081560f5e99d9c4232d6d]
+Aug-09 17:17:17.615 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 10; name: bcl2fastq (three); status: COMPLETED; exit: 0; error: -; workDir: /mnt/home/ngebremedhin/novaseq_pipe/secondary_analysis/work/1a/a8c31e52bde442fc68f8c9153cdffd]
+Aug-09 17:17:17.660 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: bcl2fastq (one); status: COMPLETED; exit: 0; error: -; workDir: /mnt/home/ngebremedhin/novaseq_pipe/secondary_analysis/work/8d/80b9f9856ee9545945a429e4738f97]
+Aug-09 17:17:17.705 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 13; name: bcl2fastq (two); status: COMPLETED; exit: 0; error: -; workDir: /mnt/home/ngebremedhin/novaseq_pipe/secondary_analysis/work/25/bcd59cdb85f8772ce624faf720e28f]
+Aug-09 17:17:17.754 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 8; name: bcl2fastq (four); status: COMPLETED; exit: 0; error: -; workDir: /mnt/home/ngebremedhin/novaseq_pipe/secondary_analysis/work/a4/babf88ded710152021965c4ba3bc9c]
+Aug-09 17:17:17.803 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 14; name: bcl2fastq (one); status: COMPLETED; exit: 0; error: -; workDir: /mnt/home/ngebremedhin/novaseq_pipe/secondary_analysis/work/69/683ccf7d4cc05781559d1a2109613b]
+Aug-09 17:17:17.851 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 16; name: bcl2fastq (three); status: COMPLETED; exit: 0; error: -; workDir: /mnt/home/ngebremedhin/novaseq_pipe/secondary_analysis/work/01/53c41edb222c53ba62149429acd22d]
+Aug-09 17:17:17.901 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: bcl2fastq (two); status: COMPLETED; exit: 0; error: -; workDir: /mnt/home/ngebremedhin/novaseq_pipe/secondary_analysis/work/12/ec5b4490cf09868c5486d0606c5457]
+Aug-09 17:17:17.946 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 7; name: bcl2fastq (one); status: COMPLETED; exit: 0; error: -; workDir: /mnt/home/ngebremedhin/novaseq_pipe/secondary_analysis/work/01/f3e12588905d6a07a7d11cf3e90924]
+Aug-09 17:17:17.991 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: bcl2fastq (three); status: COMPLETED; exit: 0; error: -; workDir: /mnt/home/ngebremedhin/novaseq_pipe/secondary_analysis/work/a9/3c86b33f623f4709074b412fe72161]
+Aug-09 17:17:18.038 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 11; name: bcl2fastq (four); status: COMPLETED; exit: 0; error: -; workDir: /mnt/home/ngebremedhin/novaseq_pipe/secondary_analysis/work/e0/c1cb23641de9e0d9de92ba0883a627]
+Aug-09 17:17:18.087 [Actor Thread 2] DEBUG nextflow.Session - <<< barrier arrive (process: bcl2fastq)
+Aug-09 17:17:18.384 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Aug-09 17:17:18.385 [Task submitter] INFO  nextflow.Session - [3a/d07329] Submitted process > submitSecondarAnalysis ([RNA-Seq, [two]])
+Aug-09 17:17:18.403 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Aug-09 17:17:18.404 [Task submitter] INFO  nextflow.Session - [b8/d4915b] Submitted process > submitSecondarAnalysis ([EM-Seq, [three]])
+Aug-09 17:17:18.588 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Aug-09 17:17:18.589 [Task submitter] INFO  nextflow.Session - [3c/a37ec1] Submitted process > submitSecondarAnalysis ([QC, [one, four]])
+Aug-09 17:17:18.745 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 19; name: submitSecondarAnalysis ([RNA-Seq, [two]]); status: COMPLETED; exit: 0; error: -; workDir: /mnt/home/ngebremedhin/novaseq_pipe/secondary_analysis/work/3a/d0732987afb0b46f751685879c4faf]
+Aug-09 17:17:18.763 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 18; name: submitSecondarAnalysis ([EM-Seq, [three]]); status: COMPLETED; exit: 0; error: -; workDir: /mnt/home/ngebremedhin/novaseq_pipe/secondary_analysis/work/b8/d4915b46c5a0e392dca0fa3146a7d4]
+Aug-09 17:17:18.880 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 17; name: submitSecondarAnalysis ([QC, [one, four]]); status: COMPLETED; exit: 0; error: -; workDir: /mnt/home/ngebremedhin/novaseq_pipe/secondary_analysis/work/3c/a37ec1ab2e8c6ce67f7c8d592ffad0]
+Aug-09 17:17:18.890 [Actor Thread 21] DEBUG nextflow.Session - <<< barrier arrive (process: submitSecondarAnalysis)
+Aug-09 17:17:18.891 [main] DEBUG nextflow.Session - Session await > all process finished
+Aug-09 17:17:18.893 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local)
+Aug-09 17:17:18.894 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Aug-09 17:17:18.908 [main] DEBUG nextflow.trace.StatsObserver - Workflow completed > WorkflowStats[succeedCount=19; failedCount=0; ignoredCount=0; cachedCount=0; succeedDuration=6.4s; failedDuration=0ms; cachedDuration=0ms]
+Aug-09 17:17:18.923 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
+Aug-09 17:17:18.963 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

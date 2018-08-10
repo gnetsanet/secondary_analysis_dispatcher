@@ -1,0 +1,5 @@
+analysis:
+  - one: QC
+  - three: EM-Seq
+  - four: QC
+  - two: RNA-Seq
